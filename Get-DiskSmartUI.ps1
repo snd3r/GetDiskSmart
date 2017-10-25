@@ -115,9 +115,9 @@ function Get-Smart ( $Computer ) {
 			'07' { 'Seek Error Rate' }
 			'08' { 'Seek Time Performance' }
 			'09' { 'Power On Hours Count (Power-on Time)' }
+			'0a' { 'Spin Retry Count' }
 			'0b' { 'Calibration Retry Count (Recalibration Retries)' }
 			'0c' { 'Power Cycle Count' }
-			'0а' { 'Spin Retry Count' }
 			'aa' { 'Available Reserved Space' }
 			'ab' { 'Program Fail Count' }
 			'ac' { 'Erase Fail Count' }
@@ -129,7 +129,18 @@ function Get-Smart ( $Computer ) {
 			'bd' { 'High Fly Writes' }
 			'be' { 'Airflow Temperature' }
 			'bf' { 'G-Sensor Shock Count (Mechanical Shock)' }
+			'c0' { 'Power Off Retract Count (Emergency Retry Count)' }
+			'c1' { 'Load/Unload Cycle Count' }
+			'c2' { 'Temperature' }
+			'c3' { 'Hardware ECC Recovered' }
+			'c4' { 'Reallocated Event Count' }
+			'c5' { 'Current Pending Sector Count' }
+			'c6' { 'Offline Uncorrectable Sector Count (Uncorrectable Sector Count)' }
+			'c7' { 'UltraDMA CRC Error Count' }
+			'c8' { 'Write Error Rate (MultiZone Error Rate)' }
+			'c9' { 'Soft Read Error Rate' }
 			'cb' { 'Run Out Cancel' }
+			'cа' { 'Data Address Mark Error' }
 			'dc' { 'Disk Shift' }
 			'e1' { 'Load/Unload Cycle Count' }
 			'e2' { 'Load ''In''-time' }
@@ -143,17 +154,6 @@ function Get-Smart ( $Computer ) {
 			'f2' { 'Total LBAs Read' }
 			'f9' { 'NAND Writes (1GiB)' }
 			'fe' { 'Free Fall Protection' }
-			'с0' { 'Power Off Retract Count (Emergency Retry Count)' }
-			'с1' { 'Load/Unload Cycle Count' }
-			'с2' { 'Temperature' }
-			'с3' { 'Hardware ECC Recovered' }
-			'с4' { 'Reallocated Event Count' }
-			'с5' { 'Current Pending Sector Count' }
-			'с6' { 'Offline Uncorrectable Sector Count (Uncorrectable Sector Count)' }
-			'с7' { 'UltraDMA CRC Error Count' }
-			'с8' { 'Write Error Rate (MultiZone Error Rate)' }
-			'с9' { 'Soft Read Error Rate' }
-			'са' { 'Data Address Mark Error' }
 			default { $Value }
 		}
 	}
